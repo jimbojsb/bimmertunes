@@ -1,0 +1,34 @@
+hash: f63f0f154fbaaa2ff1ab96f3113ae24076a9c783bb2c50058a7c84eed0425bbf
+updated: 2018-01-06T11:52:03.368226-06:00
+imports:
+- name: github.com/asaskevich/EventBus
+  version: 68a521d7cbbb7a859c2608b06342f384b3bd5f5a
+- name: github.com/BurntSushi/toml
+  version: b26d9c308763d68093482582cea63d69be07a0f0
+- name: github.com/facchinm/go-serial-native
+  version: af997a46fb5a5ad87469f1dd6a1bb86918f259ba
+- name: github.com/jacobsa/go-serial
+  version: 5786d1b837823f99ac8751a7e40811a546287bf3
+  subpackages:
+  - serial
+- name: github.com/jimbojsb/ibus
+  version: a080e6bee28514c367fe5b177464c6b36f0dd9bb
+- name: go.uber.org/atomic
+  version: 8474b86a5a6f79c443ce4b2992817ff32cf208b8
+- name: go.uber.org/multierr
+  version: 3c4937480c32f4c13a875a1829af76c98ca3d40a
+- name: go.uber.org/zap
+  version: 35aad584952c3e7020db7b839f6b102de6271f89
+  subpackages:
+  - buffer
+  - internal/bufferpool
+  - internal/color
+  - internal/exit
+  - zapcore
+- name: golang.org/x/sys
+  version: 83801418e1b59fb1880e363299581ee543af32ca
+  subpackages:
+  - unix
+- name: gopkg.in/alecthomas/kingpin.v2
+  version: 947dcec5ba9c011838740e680966fd7087a71d0d
+testImports: []
