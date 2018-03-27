@@ -36,6 +36,11 @@ func (c *CdChangerEmulator) Run() {
 		ibus.CdPlayer.RespondToStatusRequest(true, 1, 1)
 	})
 
+	ibus.Events.Subscribe(ibus.EVENT_CDPLAYER_CONTROL_STOP, func() {
+		c.logger.Debugf("cd changer stop playback")
+		ibus.CdPlayer.RespondToStatusRequest(false, 1, 1)
+	})
+
 	ibus.Events.Subscribe(ibus.EVENT_CDPLAYER_CONTROL_NEXT_TRACK, func() {
 		c.logger.Debugf("cd changer next track")
 		ibus.CdPlayer.RespondToStatusRequest(true, 1, 1)

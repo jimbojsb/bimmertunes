@@ -25,8 +25,8 @@ func main() {
 	wg.Add(1)
 	go ibus.Run("/dev/tty.SLAB_USBtoUART")
 
-	sugaredLogger.Debugf("waking up ibus, simulating IKE")
-	ibus.Ike.WakeUp()
+	//sugaredLogger.Debugf("waking up ibus, simulating IKE")
+	//ibus.Ike.WakeUp()
 
 	cdChangerEmulator := bimmertunes.NewCdChangerEmulator(sugaredLogger)
 	cdChangerEmulator.Run()

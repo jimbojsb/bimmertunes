@@ -1,4 +1,5 @@
 config.toml
 .idea/
 bimmertunes
+ibus_monitor
 vendor/

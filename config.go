@@ -1,27 +1,16 @@
 package bimmertunes
 
 type Config struct {
-	Airplay   AirplayConfig
-	Bluetooth BluetoothConfig
-	Wifi      WifiConfig
-	Ibus      IbusConfig
-	Web       WebConfig
+	Airplay AirplayConfig
+	Wifi    WifiConfig
+	Ibus    IbusConfig
 }
 
 type AirplayConfig struct {
-	Enabled bool
-	Name    string
-}
-
-type BluetoothConfig struct {
-	Enabled  bool
-	Name     string
-	Passcode string
-	Codec    string
+	Name string
 }
 
 type WifiConfig struct {
-	Enabled  bool
 	Ssid     string
 	Password string
 }
@@ -30,8 +19,4 @@ type IbusConfig struct {
 	Port         string
 	Display      string
 	IkeBroadcast bool
-}
-
-type WebConfig struct {
-	Enabled bool
 }

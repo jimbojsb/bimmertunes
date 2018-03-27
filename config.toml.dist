@@ -1,52 +1,14 @@
 [airplay]
-# enable airplay receiver for iOS devices
-enabled = true
-
 # name for AirPlay service
 name = "BimmerTunes"
 
-
-
-
-[bluetooth]
-# enable internal bluetooth and bluetooth audio
-enabled = false
-
-# name that will show up in bluetooth discovery
-name = "BimmerTunes"
-
-# set a 4 digit pin or false for no pin
-passcode = 3578
-
-# select codec for bluetooth audio, choices are:
-# aac - best for iOS devices
-# aptx - best for android devices
-# sbc - works with everything but lower quality
-codec = "aac"
-
-
-
-
-[web]
-# enable the admin web application
-enabled = true
-
-
-
-
 [wifi]
-# start internal wifi hotspot. required for webapp and airplay services
-enabled = true
-
 # ssid to use for internal wifi
 ssid = "BimmerTunes"
 
 # password to use for internal wifi. If set, WPA2 will be used.
 # If set to false network will be unsecured
 password = "bimmertunes"
-
-
-
 
 [ibus]
 # set this to true for bench testing, to simulate an IKE on the bus
